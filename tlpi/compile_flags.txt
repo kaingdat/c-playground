@@ -1,0 +1,4 @@
+-std=c99
+-D_XOPEN_SOURCE=600
+-D_DEFAULT_SOURCE
+-Ilib

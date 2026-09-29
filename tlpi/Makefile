@@ -6,6 +6,7 @@
 
 DIRS = 	lib \
 	fileio \
+    proc
 
 # The "namespaces" and "seccomp" directories are deliberately excluded from
 # the above list because much of the code in those directories requires a
