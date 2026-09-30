@@ -4,9 +4,10 @@
 # (The library directory is first so that the library gets built first)
 #
 
-DIRS = 	lib \
+DIRS = lib \
 	fileio \
-    proc
+    proc \
+    sockets
 
 # The "namespaces" and "seccomp" directories are deliberately excluded from
 # the above list because much of the code in those directories requires a

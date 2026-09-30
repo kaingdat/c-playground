@@ -1,17 +1,4 @@
-/*************************************************************************\
-*                  Copyright (C) Michael Kerrisk, 2019.                   *
-*                                                                         *
-* This program is free software. You may use, modify, and redistribute it *
-* under the terms of the GNU Lesser General Public License as published   *
-* by the Free Software Foundation, either version 3 or (at your option)   *
-* any later version. This program is distributed without any warranty.    *
-* See the files COPYING.lgpl-v3 and COPYING.gpl-v3 for details.           *
-\*************************************************************************/
-
-/* Listing 3-3 */
-
 /* error_functions.c
-
    Some standard error handling routines used by various programs.
 */
 #include "error_functions.h"
@@ -22,8 +9,7 @@
 #ifdef __GNUC__               /* Prevent 'gcc -Wall' complaining  */
 __attribute__((__noreturn__)) /* if we call this function as last */
 #endif                        /* statement in a non-void function */
-static void
-terminate(Boolean useExit3) {
+static void terminate(Boolean useExit3) {
     char *s;
 
     /* Dump core if EF_DUMPCORE environment variable is defined and
